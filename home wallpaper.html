@@ -1260,7 +1260,8 @@ opacity:0.6;
       
       window.requestAnimationFrame(step);
     
-      function step(timestamp) {
+      function step(timestamp) 
+	    {
         if (!start) start = timestamp;
         const progress = timestamp - start;
         window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));

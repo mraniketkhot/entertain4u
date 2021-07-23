@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css">
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7
+.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2
+xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="contact.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.
+0/css/font-awesome.min.css" rel="stylesheet">
+    <title>South Movies</title>
+       <style>
+
+
+		
+.home{
+    position:absolute;
+    top:9%;
+    left:0%;
+    padding:40px;
+}
+.nav1{
+    list-style-type:none;
+display:inline-block;
+padding:10px 20px;
+border:1px solid ;
+margin:5px;
+transition:1s;
+transform:translate(10%,-50%);
+
+}
+
+.nav1:hover{
+    background-color:#1c2833
+}
+.nav1 a{
+    text-decoration:none;
+    color:rgb(66, 133, 40);
+    width:100%;
+}
+ 
+ .nav1:hover a, li a:hover{
+     color:#fff;
+ }
+                    #dark-change{
+            position: absolute;
+            width: 48px;
+            height: 25px;
+            right: 340px;
+            top: 20px;
+            border: 2px solid;
+            border-radius: 20px;
+        }
+     #dark-change:before{
+            position: absolute;
+            content: '';
+            width:18px;
+            height: 18px;
+            left: 1px;
+            top: 2px;
+            border-radius: 90%;
+            background: #fff;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        #dark-change.active:before{
+            left: 24px;
+            background: #fff;
+        }
+        body.night{
+            background: #000;
+            color: #fff;
+        }
+      
+            
+               
+        .container{
+                width:100%;
+                height:100%;
+                margin:0;
+                padding:0;
+            }
+            .container nav{
+                position:absolute;
+                width:100%;
+                top: 0;
+                height:60px;
+                background-color:#1c2833;
+                color:white;
+				transform: translate(-1%,0%);
+				width:102%;
+            }
+            nav .webname{
+                float:left;
+                margin:15px 0px 15px 30px;
+                font-size:30px;
+            }
+            nav ul{
+                float:right;
+                list-style:none;
+                margin:0;
+                padding:0;
+                width:600px;
+                
+            }
+            nav li{
+                display:inline-block;
+                line-height:56px;
+                margin:0 5px;
+                
+            }
+            nav ul li a{
+                font-size:20px;
+                 position:relative;
+display:inline-block;
+color:#2196f3;
+text-transform:uppercase;
+letter-spacing:4px;
+text-decoration:none;
+overflow:hidden;
+transition:0.2s;
+}
+ul li a:hover{
+color:#fff;
+background:#2196f3;
+box-shadow: 0 0 20px #29618f, 0 0 40px  #29618f,0 0 80px  #29618f;
+transition-delay:1s;
+}
+ 
+            
+a span
+{
+position:absolute;
+display:block;
+}
+
+a span:nth-child(1)
+{
+top:0;
+left:-100%;
+width:100%;
+height:2px;
+background:linear-gradient(90deg,transparent,#2196f3);
+}
+
+a:hover span:nth-child(1)
+{
+left:100%;
+transition:1s;
+}
+a span:nth-child(3)
+{
+bottom:0%;
+right:-100%;
+width:100%;
+height:2px;
+background:linear-gradient(270deg,transparent,#2196f3);
+}
+
+a:hover span:nth-child(3)
+{
+right:100%;
+transition:1s;
+transition-delay:0.5s;
+}
+a span:nth-child(2)
+{
+top:-100%;
+right:0;
+width:2px;
+height:100%;
+background:linear-gradient(180deg,transparent,#2196f3);
+}
+
+a:hover span:nth-child(2)
+{
+top:100%;
+transition:1s;
+transition-delay:0.25s;
+}
+
+a span:nth-child(4)
+{
+bottom:-100%;
+left:0;
+width:2px;
+height:100%;
+background:linear-gradient(360deg,transparent,#2196f3);
+}
+
+a:hover span:nth-child(4)
+{
+bottom:100%;
+transition:1s;
+transition-delay:0.75s;
+}
+
+            #search{
+                position:relative;
+                margin-top:10px;
+                padding:5px 10px 5px 20px;
+                width:190;
+                height:40px;
+                border-bottom:2px solid #3498db;
+                font-size:15px;
+                color:#3498db;
+                border-radius:50px;
+                align-items:center;
+                float:right;
+                z-index:0;
+            }
+            #submit{
+                position:relative;
+                left:-40px;
+                margin-top:10px;
+                width:40px;
+                height:40px;
+                font-size:20px;
+                border-radius:50px;
+                float:right;
+                background-color:#3498db;
+                color:white;
+                cursor:pointer;
+                z-index:1;
+
+            }
+            #btn{
+                display:none;
+            }
+            .check{
+font-size:30px;
+color:white;
+float:right;
+line-height:60px;
+margin-right:20px;
+margin-left:10px;
+cursor: pointer;
+transform:rotate(-90deg);
+display:none;
+            }
+
+
+        
+
+
+
+
+    	body{
+    		background-color: #ffffff;
+    		font-family: Open sans;
+    	}
+    	img{
+    		width: 100%;
+    		min-height: 250px;
+    	}
+    	.main{
+    		padding: 40px 0;
+    	}
+    	.col-md-3{
+    		margin-bottom: 40px;
+    	}
+    	.album-poster{
+    		position: relative;
+    		display: block;
+    		border-radius: 14px;
+    		overflow: hidden;
+    		box-shadow: 0 15px 35px #0a3531;
+    		transition: all ease 0.4s;
+    	}
+    	.album-poster:hover{
+    		box-shadow: none;
+    		transform: scale(1.02) translateY(5px);
+    	}
+    	h3{
+    		font-size: 34px;
+    		margin-bottom: 34px;
+    		border-bottom: 4px solid #e6e6e6;
+    		padding-bottom: 15px;
+    	}
+    	p{
+    		font-size: 15px;
+    	}
+    	h4{
+    		font-size: 16px;
+    		text-transform: uppercase;
+    		margin-top: 15px;
+    		font-weight: 700;
+    	}
+		
+
+		
+		.container1 .star-widget input{
+    display:none;
+}
+
+.star-widget label{
+    font-size:40px;
+    color:#444;
+    padding:13px;
+    float:right;
+    transition : all 0.2s ease;
+}
+ input:not(:checked) ~ label:hover,
+ input:not(:checked) ~ label:hover ~ label{
+     color:#fd4;
+ }
+ input:checked ~ label{
+     color:#fd4;
+ }
+ input#rate-5:checked ~ label{
+     color:#fe7;
+     text-shadow: 0 0 20px #952;
+ }
+		
+
+
+
+	
+#back-to-top-btn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    font-size:26px;
+    width:50px;
+    height:50px;
+    background-color:#fff;
+    color:#333;
+    cursor:pointer;
+    outline:none;
+    border:3px solid #333;
+    border-radius:50%;
+    transition-duration:0.2s;
+    transition-timing-function:ease-in-out;
+    transition-property: background-color, color;
+}
+#back-to-top-btn:hover, #back-to-top-btn:focus{
+    background-color:#333;
+    color:#fff;
+
+}
+	  
+@media(max-width:1100px){
+                nav ul{
+                    width:0%;
+                    position:fixed;
+                    height:200px;
+                    top:60px;
+                    left:100%;
+                    text-align:center;
+                    background-color:#2c3e50;
+                    transition:all 1s;
+
+                }
+                nav .webname{
+             display:none;  
+			}
+                nav ul li{
+                    display:block;
+                }
+                nav ul li a{
+                    font-size:20px;
+                    color:white;
+                }
+                .check{
+                    display:block;
+                }
+                nav ul li a{
+                    font-size:20px;
+                    color:white;
+                }
+                .check{
+                    display:block;                    
+                }
+                #btn:checked~ul{
+                   left:70%;
+                }
+                .container nav{
+                position:absolute;
+                width:100%;
+                top: 0;
+                height:60px;
+                background-color:#1c2833;
+                color:white;
+				transform: translate(-1%,0%);
+				width:115%;
+            }
+            }
+            @media screen and (min-width:1100px) {
+          .respon{
+            display: flex;
+            float:left;
+          }
+          nav .webname{
+             
+                margin:15px 0px 15px 30px;
+                font-size:30px;
+            }
+            #search{
+                position:relative;
+                margin-top:10px;
+                padding:5px 10px 5px 20px;
+                width:250;
+                height:40px;
+                border-bottom:2px solid #3498db;
+                font-size:15px;
+                color:#3498db;
+                border-radius:50px;
+                align-items:center;
+                float:right;
+                z-index:0;
+            }
+ 
+        
+        }
+
+
+
+    </style>
+ 	</head>
+	<body>
+  
+
+
+
+    
+        <div class="container">
+    
+            <nav style="transform: translate(-1%,0%)">
+                <input type="checkbox" name="" id="btn">
+                <label for="btn" class="check">!!!</label>
+              
+                <a href="" id="hp" onclick="searchit()">  <input type="submit" value="Q" id="submit"></input></a>
+                <input type="search" name="" id="search" placeholder="search engine">
+          <script>
+            function searchit()
+          {
+            document.getElementById("hp").href=
+            (("https://www.google.com/search?q=")+
+            (document.getElementById("search").value));
+          }
+            </script>
+              <div class="webname">WD</div>
+              <ul>
+                  <li><a href="index.html" style="	text-decoration: none;left:-150%"><span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>&nbspHOME&nbsp</a></li>
+                  <li><a href="about us.html" style="	text-decoration: none;left:-100%"><span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>&nbspABOUT &nbsp</a></li>
+                  <li><a href="contact.html" style="	text-decoration: none;left:-95%"><span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>&nbspCONTACT&nbsp</a></li>
+                      <li><a href="feedback.html" style="	text-decoration: none;left:-80%"><span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>&nbspFEEDBACK&nbsp</a></li>
+              </ul>
+                      
+              <header>
+                <div  id="dark-change"></div>
+              </header>
+             
+                <script>
+                    var content = document.getElementsByTagName('body')[0];
+                    var darkMode = document.getElementById('dark-change');
+                    darkMode.addEventListener('click', function(){
+                        darkMode.classList.toggle('active');
+                        content.classList.toggle('night');
+                    })
+                </script>
+        </nav>
+              </div>
+              
+
+
+
+
+
+				  
+
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		  <div class="main" style="width:90%;transform: translate(6%,4%);">
+
+
+<div class="main">
+	<div class="container">
+		<div class="row"style="transform: translate(0%,-4%);">
+			<div class="col-md-12">
+				<h3>South Movies</h3>
+			</div>
+			<div class="col-md-4">
+				<a href="96.html" class="album-poster">
+					<img src="moviesw\96.jpg">
+				</a>
+				
+				<h4>96</h4>
+				<p></p>
+			</div>
+			<div class="col-md-4">
+				<a href="Dashing Hero.html" class="album-poster" >
+					<img src="moviesw\Dashing Hero.jpg">
+				</a>
+				<h4>Dashing Hero</h4>
+				<p></p>
+			</div>
+			<div class="col-md-4">
+				<a href="hyper 2.html" class="album-poster">
+					<img src="moviesw\hyper 2.jpg">
+				</a>
+				<h4>Hyper 2</h4>
+				<p></p>
+			</div>
+
+			<div class="col-md-4">
+				<a href="Kanithan.html" class="album-poster" >
+					<img src="moviesw\Kanithan.jpg">
+				</a>
+				<h4>Kanithan.</h4>
+				<p></p>
+			</div>
+			<div class="col-md-4">
+				<a href="Maryan.html" class="album-poster" >
+					<img src="moviesw\Maryan.jpg">
+				</a>
+				<h4>Maryan</h4>
+				<p></p>
+			</div>
+			<div class="col-md-4">
+				<a href="Mawali Raaj.html" class="album-poster" >
+					<img src="moviesw\Mawali Raaj.jpg">
+				</a>
+				<h4>Mawali Raaj</h4>
+				<p></p>
+			</div>
+			<div class="col-md-4">
+				<a href="Rajkumar.html" class="album-poster" >
+					<img src="moviesw\Rajkumar.jpg">
+				</a>
+				<h4>Rajkumar</h4>
+				<p></p>
+			</div>
+			<div class="col-md-4">
+				<a href="super khiladi 3.html" class="album-poster">
+					<img src="moviesw\super khiladi 3.jpg">
+				</a>
+				<h4>super khiladi 3</h4>
+				<p></p>
+			</div>
+			<div class="col-md-4">
+				<a href="Yeh Hai Zindagi.html" class="album-poster">
+					<img src="moviesw\Yeh Hai Zindagi.jpg">
+				</a>
+				<h4>Yeh Hai Zindagi</h4>
+				<p></p>
+
+
+			</div>
+			
+		</div>
+
+
+	</div>
+</div>
+
+<div class="main">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h3></h3>
+			</div>
+		</div>
+	</div>
+</div>	
+
+
+
+
+<button id="back-to-top-btn">    <i class="fa fa-angle-double-up" aria-hidden="true"></i> </button>
+
+<script>
+    const backToTopButton = document.querySelector("#back-to-top-btn");
+
+    window.addEventListener("scroll", scrollFunction);
+    
+    function scrollFunction() {
+      if (window.pageYOffset > 300) { // Show backToTopButton
+        if(!backToTopButton.classList.contains("btnEntrance")) {
+          backToTopButton.classList.remove("btnExit");
+          backToTopButton.classList.add("btnEntrance");
+          backToTopButton.style.display = "block";
+        }
+      }
+      else { // Hide backToTopButton
+        if(backToTopButton.classList.contains("btnEntrance")) {
+          backToTopButton.classList.remove("btnEntrance");
+          backToTopButton.classList.add("btnExit");
+          setTimeout(function() {
+            backToTopButton.style.display = "none";
+          }, 250);
+        }
+      }
+    }
+    
+    backToTopButton.addEventListener("click", smoothScrollBackToTop);
+    
+
+    
+    function smoothScrollBackToTop() {
+      const targetPosition = 0;
+      const startPosition = window.pageYOffset;
+      const distance = targetPosition - startPosition;
+      const duration = 750;
+      let start = null;
+      
+      window.requestAnimationFrame(step);
+    
+      function step(timestamp) {
+        if (!start) start = timestamp;
+        const progress = timestamp - start;
+        window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
+        if (progress < duration) window.requestAnimationFrame(step);
+      }
+    }
+    
+    function easeInOutCubic(t, b, c, d) {
+        t /= d/2;
+        if (t < 1) return c/2*t*t*t + b;
+        t -= 2;
+        return c/2*(t*t*t + 2) + b;
+    };
+</script>
+
+
+	</body>
+</html>

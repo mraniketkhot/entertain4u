@@ -1,0 +1,1010 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+  
+    <title>Inspirational Songs</title>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,shrink-to-fit=no">
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7
+.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2
+xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="contact.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.
+0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css"/>
+
+    <style>
+    	body{
+        	background-color: #f7f7f7;
+    		font-family: Open sans;
+    	}
+		.home{
+    position:absolute;
+    top:9%;
+    left:0%;
+    padding:40px;
+}
+.nav1{
+    list-style-type:none;
+display:inline-block;
+padding:10px 20px;
+border:1px solid ;
+margin:5px;
+transition:1s;
+transform:translate(10%,-50%);
+
+}
+
+.nav1:hover{
+    background-color:#1c2833
+}
+.nav1 a{
+    text-decoration:none;
+    color:rgb(66, 133, 40);
+    width:100%;
+}
+ 
+ .nav1:hover a, li a:hover{
+     color:#fff;
+ }
+                    #dark-change{
+            position: absolute;
+            width: 48px;
+            height: 25px;
+            right: 340px;
+            top: 20px;
+            border: 2px solid;
+            border-radius: 20px;
+        }
+     #dark-change:before{
+            position: absolute;
+            content: '';
+            width:18px;
+            height: 18px;
+            left: 1px;
+            top: 2px;
+            border-radius: 90%;
+            background: #fff;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        #dark-change.active:before{
+            left: 24px;
+            background: #fff;
+        }
+        body.night{
+            background: #000;
+            color: #fff;
+        }
+      
+            
+            .container{
+                width:100%;
+                height:100%;
+                margin:0;
+                padding:0;
+            }
+            .container nav{
+                position:absolute;
+                width:100%;
+                top: 0;
+                height:60px;
+                background-color:#1c2833;
+                color:white;
+			transform: translate(-1%,0%);
+            }
+            nav .webname{
+                float:left;
+                margin:15px 0px 15px 30px;
+                font-size:70px;
+            }
+            nav ul{
+                float:right;
+                list-style:none;
+                margin:0;
+                padding:0;
+                width:600px;
+                
+            }
+            nav li{
+                display:inline-block;
+                line-height:56px;
+                margin:0 5px;
+                
+            }
+            nav ul li a{
+                font-size:20px;
+                 position:relative;
+display:inline-block;
+color:#2196f3;
+text-transform:uppercase;
+letter-spacing:4px;
+text-decoration:none;
+overflow:hidden;
+transition:0.2s;
+}
+ul li a:hover{
+color:#fff;
+background:#2196f3;
+box-shadow: 0 0 20px #29618f, 0 0 40px  #29618f,0 0 80px  #29618f;
+transition-delay:1s;
+}
+ 
+            
+a span
+{
+position:absolute;
+display:block;
+}
+
+a span:nth-child(1)
+{
+top:0;
+left:-100%;
+width:100%;
+height:2px;
+background:linear-gradient(90deg,transparent,#2196f3);
+}
+
+a:hover span:nth-child(1)
+{
+left:100%;
+transition:1s;
+}
+a span:nth-child(3)
+{
+bottom:0%;
+right:-100%;
+width:100%;
+height:2px;
+background:linear-gradient(270deg,transparent,#2196f3);
+}
+
+a:hover span:nth-child(3)
+{
+right:100%;
+transition:1s;
+transition-delay:0.5s;
+}
+a span:nth-child(2)
+{
+top:-100%;
+right:0;
+width:2px;
+height:100%;
+background:linear-gradient(180deg,transparent,#2196f3);
+}
+
+a:hover span:nth-child(2)
+{
+top:100%;
+transition:1s;
+transition-delay:0.25s;
+}
+
+a span:nth-child(4)
+{
+bottom:-100%;
+left:0;
+width:2px;
+height:100%;
+background:linear-gradient(360deg,transparent,#2196f3);
+}
+
+a:hover span:nth-child(4)
+{
+bottom:100%;
+transition:1s;
+transition-delay:0.75s;
+}
+
+            #search{
+                position:relative;
+                margin-top:10px;
+                padding:5px 10px 5px 20px;
+                width:190;
+                height:40px;
+                border-bottom:2px solid #3498db;
+                font-size:15px;
+                color:#3498db;
+                border-radius:50px;
+                align-items:center;
+                float:right;
+                z-index:0;
+            }
+            #submit{
+                position:relative;
+                left:-40px;
+                margin-top:10px;
+                width:40px;
+                height:40px;
+                font-size:20px;
+                border-radius:50px;
+                float:right;
+                background-color:#3498db;
+                color:white;
+                cursor:pointer;
+                z-index:1;
+
+            }
+            #btn{
+                display:none;
+            }
+            .check{
+font-size:30px;
+color:white;
+float:right;
+line-height:60px;
+margin-right:20px;
+margin-left:10px;
+cursor: pointer;
+transform:rotate(-90deg);
+display:none;
+            }
+
+		
+    	img{
+    		width: 100%;
+    		min-height: 250px;
+    	}
+    	.main{
+    		padding: 40px 0;
+    	}
+    	.col-md-3{
+    		margin-bottom: 40px;
+    	}
+    	.album-poster{
+    		position: relative;
+    		display: block;
+    		border-radius: 7px;
+    		overflow: hidden;
+    		box-shadow: 0 15px 35px #4b07d3a1;
+    		transition: all ease 0.4s;
+    	}
+    	.album-poster:hover{
+    		box-shadow: none;
+    		transform: scale(0.98) translateY(5px);
+    	}
+    	h3{
+    		font-size: 34px;
+    		margin-bottom: 34px;
+    		border-bottom: 4px solid #e6e6e6;
+    		padding-bottom: 15px;
+    	}
+    	p{
+    		font-size: 15px;
+    	}
+    	h4{
+    		font-size: 16px;
+    		text-transform: uppercase;
+    		margin-top: 15px;
+    		font-weight: 700;
+    	}
+
+
+		       #dark-change{
+            position: absolute;
+            width: 48px;
+            height: 25px;
+            right: 340px;
+            top: 20px;
+            border: 2px solid;
+            border-radius: 20px;
+        }
+     #dark-change:before{
+            position: absolute;
+            content: '';
+            width:18px;
+            height: 18px;
+            left: 1px;
+            top: 2px;
+            border-radius: 90%;
+            background: #fff;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        #dark-change.active:before{
+            left: 24px;
+            background: #fff;
+        }
+        body.night{
+            background: #000;
+            color: #fff;
+        }
+		
+    	img{
+    		width: 100%;
+    		min-height: 250px;
+    	}
+    	.main{
+    		padding: 40px 0;
+    	}
+    	.col-md-3{
+    		margin-bottom: 40px;
+    	}
+    	.album-poster{
+    		position: relative;
+    		display: block;
+    		border-radius: 7px;
+    		overflow: hidden;
+    		box-shadow: 0 15px 35px #4b07d3a1;
+    		transition: all ease 0.4s;
+    	}
+    	.album-poster:hover{
+    		box-shadow: none;
+    		transform: scale(0.98) translateY(5px);
+    	}
+    	h3{
+    		font-size: 34px;
+    		margin-bottom: 34px;
+    		border-bottom: 4px solid #e6e6e6;
+    		padding-bottom: 15px;
+    	}
+    	p{
+    		font-size: 15px;
+    	}
+    	h4{
+    		font-size: 16px;
+    		text-transform: uppercase;
+    		margin-top: 15px;
+    		font-weight: 700;
+    	}
+		
+
+	
+		#aplayer{
+			position: fixed;
+			bottom: -100%;
+			left: 0;
+			width: 100%;
+			margin: 0;
+			box-shadow: 0 -2px 2px #dadada;
+			background-color: #fff;
+			transition: all ease 0.5s;
+		}
+		#aplayer.showPlayer{
+			bottom: 0;
+		}
+
+		
+	
+		span{
+			color: #000 !important;
+			font-size: 16px;
+		}
+		.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded{
+			background: #e0e0e0;
+    		height: 4px;
+		}
+		.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played{
+			height: 4px;
+			background-color: #2196F3 !important;
+		}
+		.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb{
+			background-color: #2196F3 !important;
+		}
+
+		.aplayer .aplayer-icon{
+			width: 20px;
+			height: 20px;
+		}
+		.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
+		    fill: #000;
+		}
+		.aplayer .aplayer-info .aplayer-music{
+			margin-bottom: 5px;
+		}
+	#back-to-top-btn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    font-size:26px;
+    width:50px;
+    height:50px;
+    background-color:#fff;
+    color:#333;
+    cursor:pointer;
+    outline:none;
+    border:3px solid #333;
+    border-radius:50%;
+    transition-duration:0.2s;
+    transition-timing-function:ease-in-out;
+    transition-property: background-color, color;
+}
+#back-to-top-btn:hover, #back-to-top-btn:focus{
+    background-color:#333;
+    color:#fff;
+
+}
+
+@media(max-width:1054px){
+	nav ul{
+                    width:0%;
+                    position:fixed;
+                    height:200px;
+                    top:200px;
+                    left:100%;
+                    text-align:center;
+                    background-color:#2c3e50;
+                    transition:all 1s;
+
+                }
+                nav ul li{
+                    display:block;
+                }
+                nav ul li a{
+                    font-size:20px;
+                    color:black;
+                }
+                .check{
+                    display:block;
+                }
+                nav ul li a{
+                    font-size:20px;
+                    color:black;
+                }
+                .check{
+                    display:block;                    
+                }
+                #btn:checked~ul{
+                   left:70%;
+                }
+	        .container nav{
+                position:absolute;
+                width:100%;
+                top: 0;
+                height:60px;
+                background-color:#1c2833;
+                color:white;
+			transform: translate(-1%,0%);
+			width:113%;
+            }
+			nav .webname{
+             display:none;  
+			}
+			 #dark-change{
+            position: absolute;
+            width: 48px;
+            height: 25px;
+            right: 400px;
+            top: 20px;
+            border: 2px solid;
+            border-radius: 20px;
+      
+            }
+			#dark-change:before{
+            position: absolute;
+            content: '';
+            width:18px;
+            height: 18px;
+            left: 1px;
+            top: 2px;
+            border-radius: 90%;
+            background: #fff;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+			
+		.home{
+    position:absolute;
+    top:9%;
+    left:0%;
+    padding:1px;
+}
+.nav1{
+    list-style-type:none;
+display:inline-block;
+padding:2px 10px;
+border:1px solid ;
+margin:2px;
+transition:1s;
+transform:translate(10%,-50%);
+font-size: 17px;
+ 
+}
+ 
+.nav1:hover{
+    background-color:#1c2833
+}
+.nav1 a{
+    text-decoration:none;
+    color:rgb(66, 133, 40);
+    width:100%;
+	height:20%;
+}
+ 
+ .nav1:hover a, li a:hover{
+     color:#fff;
+ }
+
+ .box{
+        position:relative;
+		width:85%; 
+        height:10px;
+        transform-style:preserve-3d;
+        animation:animate 11s linear infinite;
+    }
+
+
+            }
+            @media screen and (min-width:1054px) {
+				.respon{
+            display: flex;
+            float:left;
+          }
+     
+            #search{
+                position:relative;
+                margin-top:10px;
+                padding:5px 10px 5px 20px;
+                width:250;
+                height:40px;
+                border-bottom:2px solid #3498db;
+                font-size:15px;
+                color:#3498db;
+                border-radius:50px;
+                align-items:center;
+                float:right;
+                z-index:0;
+            }
+        
+        }
+
+    </style>
+ 	</head>
+
+           <body>
+		    <div class="container">
+    
+				<nav>
+					<input type="checkbox" name="" id="btn">
+					<label for="btn" class="check">!!!</label>
+				  
+					<a href="" id="hp" onclick="searchit()">  <input type="submit" value="Q" id="submit"></input></a>
+					<input type="search" name="" id="search" placeholder="search engine">
+			  <script>
+				function searchit()
+			  {
+				document.getElementById("hp").href=
+				(("https://www.google.com/search?q=")+
+				(document.getElementById("search").value));
+			  }
+				</script>
+				  <div class="webname"><h3>WD</h3></div>
+				  <ul>
+					  <li><a href="index.html" style="	text-decoration: none;left:-150%"><span></span>
+						  <span></span>
+						  <span></span>
+						  <span></span>&nbspHOME&nbsp</a></li>
+					  <li><a href="about us.html" style="	text-decoration: none;left:-100%"><span></span>
+						  <span></span>
+						  <span></span>
+						  <span></span>&nbspABOUT &nbsp</a></li>
+					  <li><a href="contact.html" style="	text-decoration: none;left:-95%"><span></span>
+						  <span></span>
+						  <span></span>
+						  <span></span>&nbspCONTACT&nbsp</a></li>
+						  <li><a href="feedback.html" style="	text-decoration: none;left:-80%"><span></span>
+							<span></span>
+							<span></span>
+							<span></span>&nbspFEEDBACK&nbsp</a></li>
+				  </ul>
+						  
+				  <header>
+					<div  id="dark-change"></div>
+				  </header>
+				 
+					<script>
+						var content = document.getElementsByTagName('body')[0];
+						var darkMode = document.getElementById('dark-change');
+						darkMode.addEventListener('click', function(){
+							darkMode.classList.toggle('active');
+							content.classList.toggle('night');
+						})
+					</script>
+			</nav>
+				  </div>
+
+	 <div class="main" style="width:90%;transform: translate(6%,3%);">
+ 
+
+                 <div class="main">
+	                <div class="container">
+		               <div class="row" style="transform: translate(0%,-3%);">
+			               <div class="col-md-12">
+				           <h3>Inspirational Songs</h3>
+			         </div>
+			      <div class="col-md-2">
+				          <a href="javascript:void();" class="album-poster" data-switch="0">
+					          <img src="songs/aa.jpg">
+				          </a>
+				               <h4>Muqabala</h4>
+							   <a href="login.html"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+				               <p>Street Dancer </p>
+			     </div>
+                  <div class="col-md-2">
+				          <a href="javascript:void();" class="album-poster" data-switch="1">
+					          <img src="songs/bb.jpg">
+				          </a>
+				               <h4>Ghamand Kar</h4>
+							   <a href="login.html"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+				               <p>Tanhaji</p>
+			     </div>
+            <div class="col-md-2">
+				          <a href="javascript:void();" class="album-poster" data-switch="2">
+					          <img src="songs/cc.jpg">
+				          </a>
+				               <h4>Sultan-Song</h4>
+							   <a href="login.html"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+				               <p>Sultan</p>
+			     </div>
+            <div class="col-md-2">
+				          <a href="javascript:void();" class="album-poster" data-switch="3">
+					          <img src="songs/dd.jpg">
+				          </a>
+				               <h4>Besabariyaan</h4>
+							   <a href="login.html"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+				               <p>M.S. Dhoni-The Untold Story</p>
+			     </div>
+            <div class="col-md-2">
+				          <a href="javascript:void();" class="album-poster" data-switch="4">
+					          <img src="songs/ee.jpg">
+				          </a>
+				               <h4>Challa</h4>
+							   <a href="login.html"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+				               <p>URI</p>
+			     </div>
+            <div class="col-md-2">
+				          <a href="javascript:void();" class="album-poster" data-switch="5">
+					          <img src="songs/ff.jpg">
+				          </a>
+				               <h4>Dhakad</h4>
+							   <a href="login.html"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+				               <p>Dangal</p>
+			     </div>
+            <div class="col-md-2">
+				          <a href="javascript:void();" class="album-poster" data-switch="6">
+					          <img src="songs/gg.jpg">
+				          </a>
+				               <h4>Get Ready To Fight</h4>
+							   <a href="login.html"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+				               <p>Baaghi</p>
+			     </div>
+            <div class="col-md-2">
+				          <a href="javascript:void();" class="album-poster" data-switch="7">
+					          <img src="songs/hh.jpg">
+				          </a>
+				               <h4>Give Me Some Sunhine</h4>
+							   <a href="login.html"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+				               <p>3-idiots</p>
+			     </div>
+
+            <div class="col-md-2">
+				          <a href="javascript:void();" class="album-poster" data-switch="8">
+					          <img src="songs/ii.jpg">
+				          </a>
+				               <h4>Illahi</h4><br>
+							   <a href="login.html"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+				               <p>Yeh Jawani Hai Deewani</p>
+			     </div>
+            <div class="col-md-2">
+				          <a href="javascript:void();" class="album-poster" data-switch="9">
+					          <img src="songs/jj.jpg">
+				          </a>
+				               <h4>Jagga Jiteya</h4><br>
+							   <a href="login.html"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+				               <p>URI</p>
+			     </div>
+            <div class="col-md-2">
+				          <a href="javascript:void();" class="album-poster" data-switch="10">
+					          <img src="songs/kk.jpg">
+				          </a>
+				               <h4>Kandhon se milt hai kandhen</h4>
+							   <a href="login.html"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+				               <p>Lakshya</p>
+			     </div>
+            <div class="col-md-2">
+				          <a href="javascript:void();" class="album-poster" data-switch="11">
+					          <img src="songs/ll.jpg">
+				          </a>
+				               <h4>Lakshya-Title Song</h4>
+							   <a href="login.html"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+
+				               <p>Lakshya</p>
+			     </div>
+            <div class="col-md-2">
+				          <a href="javascript:void();" class="album-poster" data-switch="12">
+					          <img src="songs/mm.jpg">
+				          </a>
+				               <h4>Manzar Hai Yeh</h4>
+							   <a href="login.html"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+
+				               <p>URI</p>
+			     </div>
+            <div class="col-md-2">
+				          <a href="javascript:void();" class="album-poster" data-switch="13">
+					          <img src="songs/nn.jpg">
+				          </a>
+				               <h4>Soorma-Anthem</h4>
+							   <a href="login.html"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+							   
+				               <p>Soorma</p>
+			     </div>
+            <div class="col-md-2">
+				          <a href="javascript:void();" class="album-poster" data-switch="14">
+					          <img src="songs/oo.jpg">
+				          </a>
+				               <h4>Teri Mitti</h4>
+							   <a href="login.html"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+
+				               <p>Kesari</p>
+			     </div>
+            <div class="col-md-2">
+				          <a href="javascript:void();" class="album-poster" data-switch="15">
+					          <img src="songs/pp.jpg">
+				          </a>
+				               <h4>Vijayi Bhava</h4>
+							   <a href="login.html"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+
+				               <p>Manikarnika</p>
+			     </div>
+            <div class="col-md-2">
+				          <a href="javascript:void();" class="album-poster" data-switch="16">
+					          <img src="songs/qq.jpg">
+				          </a>
+				               <h4>Ziddi Dil</h4>
+							   <a href="login.html"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+
+				               <p>Mary Kom</p>
+			     </div>
+            <div class="col-md-2">
+				          <a href="javascript:void();" class="album-poster" data-switch="17">
+					          <img src="songs/rr.jpg">
+				          </a>
+				               <h4>Zinda</h4>
+							   <a href="login.html"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+							   
+				               <p>Bhaag Milkha Bhaag</p>
+			     </div>
+
+
+		
+		</div>
+
+	    </div>	
+
+	</div>
+	</div>
+  
+    
+
+
+	<div id="aplayer"></div>
+
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>	
+
+	<script>
+
+
+		
+		$(".album-poster").on('click', function(e){
+			var dataSwitchId = $(this).attr('data-switch');
+			
+			
+			ap.list.switch(dataSwitchId); 
+
+			
+			ap.play();
+
+			
+			$("#aplayer").addClass('showPlayer');
+		});
+
+		const ap = new APlayer({
+		    container: document.getElementById('aplayer'),
+		    listFolded: true,
+		    audio: [
+
+
+                
+             {
+		        name: 'Muqabala',
+		        artist: 'Yash Narvekar,Parampara thakur',
+		        url: 'source/Muqabla - Street Dancer 3D.mp3',
+		        cover: 'songs/aa.jpg'
+		    },
+       
+         {
+		        name: 'Ghamand kar',
+		        artist: 'Sachet Tandon,parampara thakur',
+		        url: 'source/Ghamand kar.mp3',
+		        cover: 'songs/bb.jpg'
+		    },
+         {
+		        name: 'Sultan',
+		        artist: 'Sukhwinder Singh',
+		        url: 'source/Sultan.mp3',
+		        cover: 'songs/cc.jpg'
+		    },
+        
+         {
+		        name: 'Besabariyaan',
+		        artist: 'Armaan malik',
+		        url: 'source/BESABRIYAAN_Full_Video_Song__M._S._DHONI_-_THE_UNTOLD_STORY__Sushant_Singh_Rajput(256kbps).mp3',
+		        cover: 'songs/dd.jpg'
+		    },
+         {
+		        name: 'Challa',
+		        artist: '_Romy_&_Vivek',
+		        url: 'source/Challa_(Main_Lad_Jaana)_-_Full_Video__URI__Vicky_Kaushal_,_Yami_Gautam__Shashwat_S,_Romy_&_Vivek(256kbps).mp3',
+		        cover: 'songs/ee.jpg'
+		    },
+         {
+		        name: 'Dhakad',
+		        artist: 'Pritam__Amitabh_Bhattacharya',
+		        url: 'source/Dhaakad_Aamir_Khan_Version_-_Dangal__Aamir_Khan__Pritam__Amitabh_Bhattacharya(256kbps).mp3',
+		        cover: 'songs/ff.jpg'
+		    },
+         {
+		        name: 'Get_Ready_To_Fight_',
+		        artist: 'Grandmaster_Shifuji__Benny_Dayal',
+		        url: 'source/Get_Ready_To_Fight_Full_Video_Song__BAAGHI__Tiger_Shroff,_Grandmaster_Shifuji__Benny_Dayal(256kbps).mp3',
+		        cover: 'songs/gg.jpg'
+		    },
+         {
+		        name: 'Give_Me_Some_Sunshine',
+		        artist: 'R._Madhavan,_Sharman_Joshi',
+		        url: 'source/Give_Me_Some_Sunshine_Lyrical_Video__3_Idiots__Aamir_Khan,_R._Madhavan,_Sharman_Joshi(256kbps).mp3',
+		        cover: 'songs/hh.jpg'
+		    },
+         {
+		        name: 'Ilahi',
+		        artist: 'Arjit Singh',
+		        url: 'source/Ilahi_Full_Video_Song__Yeh_Jawaani_Hai_Deewani__Ranbir_Kapoor,_Deepika_Padukone(256kbps).mp3',
+		        cover: 'songs/ii.jpg'
+		    },
+ {
+		        name: 'Jagga_Jiteya',
+		        artist: 'Daler_Mehndi,_Dee_MC_&_Shashwat',
+		        url: 'source/Jagga_Jiteya_-_Full_Video__URI__Vicky_Kaushal_&_Yami_Gautam__Daler_Mehndi,_Dee_MC_&_Shashwat_S(256kbps).mp3',
+		        cover: 'songs/jj.jpg'
+		    },
+         {
+		        name: 'Kandhon_Se_Milte_Hain_Kandhe',
+		        artist: 'Sonu_Nigam,_Hariharan',
+		        url: 'source/Kandhon_Se_Milte_Hain_Kandhe_Full_Video_-_LakshyaHrithik_RoshanSonu_Nigam,_Hariharan(256kbps).mp3',
+		        cover: 'songs/kk.jpg'
+		    },
+         {
+		        name: 'Lakshya',
+		        artist: '_Ehsaan_LoyJaved_Akhtar',
+		        url: 'source/Lakshya_Full_Video_-_Title_TrackHrithik_RoshanShankar_Ehsaan_LoyJaved_Akhtar(256kbps).mp3',
+		        cover: 'songs/ll.jpg'
+		    },
+         {
+		        name: 'Manzar_Hai_Yeh_Naya',
+		        artist: 'Shantanu_S_&_Shashwat_S',
+		        url: 'source/Manzar_Hai_Yeh_Naya_-_Full_Video__URI__Vicky_Kaushal_&_Yami_Gautam__Shantanu_S_&_Shashwat_S(128kbps).mp3',
+		        cover: 'songs/mm.jpg'
+		    },
+         {
+		        name: 'Soorma_Anthem',
+		        artist: 'Shankar_Ehsaan_Loy__Gulzar',
+		        url: 'source/Soorma_Anthem_–_Lyric_Video__Soorma__Diljit_Dosanjh__Shankar_Ehsaan_Loy__Gulzar(256kbps).mp3',
+		        cover: 'songs/nn.jpg'
+		    },
+         {
+		        name: 'Teri_Mitti',
+		        artist: 'B_Praak__Manoj_Muntashir',
+		        url: 'source/Teri_Mitti_-_Kesari__Akshay_Kumar_&_Parineeti_Chopra__Arko__B_Praak__Manoj_Muntashir(256kbps).mp3',
+		        cover: ' songs/oo.jpg'
+		    },
+         {
+		        name: 'Vijayi_Bhava',
+		        artist: 'Shankar_Ehsaan_Loy__Prasoon_Joshi',
+		        url: 'source/Vijayi_Bhava_-_Full_Video__Manikarnika__Kangana_Ranaut__Shankar_Ehsaan_Loy__Prasoon_Joshi(256kbps).mp3',
+		        cover: 'songs/pp.jpg'
+		    },
+         {
+		        name: 'Ziddi_Dil',
+		        artist: 'Vishal_Dadlani',
+		        url: 'source/Ziddi_Dil_Full_Video__MARY_KOM__Feat_Priyanka_Chopra__Vishal_Dadlani__HD(256kbps).mp3',
+		        cover: 'songs/qq.jpg'
+		    },
+ {
+		        name: 'Zinda',
+		        artist: 'Siddharth_MahadevanPrasoon_Joshi',
+		        url: 'source/Zinda_Lyric_Video_-_Bhaag_Milkha_BhaagFarhan_AkhtarSiddharth_MahadevanPrasoon_Joshi(256kbps).mp3',
+		        cover: 'songs/rr.jpg'
+		    },
+		    
+          ]
+		});
+	</script>
+	<div class="main">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h3></h3>
+			</div>
+		</div>
+	</div>
+</div>	
+
+
+
+
+		  <button id="back-to-top-btn">    <i class="fa fa-angle-double-up" aria-hidden="true"></i> </button>
+
+		  <script>
+			  const backToTopButton = document.querySelector("#back-to-top-btn");
+		  
+			  window.addEventListener("scroll", scrollFunction);
+			  
+			  function scrollFunction() {
+				if (window.pageYOffset > 300) { 
+				  if(!backToTopButton.classList.contains("btnEntrance")) {
+					backToTopButton.classList.remove("btnExit");
+					backToTopButton.classList.add("btnEntrance");
+					backToTopButton.style.display = "block";
+				  }
+				}
+				else { 
+				  if(backToTopButton.classList.contains("btnEntrance")) {
+					backToTopButton.classList.remove("btnEntrance");
+					backToTopButton.classList.add("btnExit");
+					setTimeout(function() {
+					  backToTopButton.style.display = "none";
+					}, 250);
+				  }
+				}
+			  }
+			  
+			  backToTopButton.addEventListener("click", smoothScrollBackToTop);
+			  
+		  
+			  
+			  function smoothScrollBackToTop() {
+				const targetPosition = 0;
+				const startPosition = window.pageYOffset;
+				const distance = targetPosition - startPosition;
+				const duration = 750;
+				let start = null;
+				
+				window.requestAnimationFrame(step);
+			  
+				function step(timestamp) {
+				  if (!start) start = timestamp;
+				  const progress = timestamp - start;
+				  window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
+				  if (progress < duration) window.requestAnimationFrame(step);
+				}
+			  }
+			  
+			  function easeInOutCubic(t, b, c, d) {
+				  t /= d/2;
+				  if (t < 1) return c/2*t*t*t + b;
+				  t -= 2;
+				  return c/2*(t*t*t + 2) + b;
+			  };
+		  </script>
+		  
+
+	</body>
+
+
+</html>

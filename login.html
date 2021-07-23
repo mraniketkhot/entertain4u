@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>Login</title>
+<link rel="stylesheet" href="login page.css">
+<style>
+  body{
+	margin:0;
+	padding:0;
+	background:url("mainimg/backg.gif");
+	background-size:cover;
+	font-family: sans-serif; 
+}
+
+.loginbox{
+
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	width:350px;
+	height:430px;
+	padding:50px;
+	box-sizing: border-box;
+	background:rgba(0,0,0,0.5);
+}
+
+
+h2
+{
+	margin:0;
+	padding:0 0 20px;
+	color:#1E90FF;
+	text-align:center;
+}
+
+
+
+.loginbox p{
+	padding:0;
+	margin:0;
+	
+	color:#ffffff;
+	
+} 
+
+
+
+.loginbox input{
+	width:100%;
+	margin-bottom: 20px; 
+}
+
+
+.loginbox input[type="text"], .loginBox input[type="password"]{
+	border: none;
+	border-bottom: 1px solid #ffffff;
+	background: transparent;
+	outline:none;
+	height:40px;
+	color:#ffffff;
+	font-size: 16px;
+	
+	
+}
+
+
+
+.loginbox input[type="submit"]{
+	border:none;
+	outline:none;
+	height: 40px;
+	color:#ffffff;
+	font-size:16px;
+	background: rgb(255,38,126);
+	cursor:pointer;
+	border-radius:20px;
+}
+
+
+
+.loginbox a{
+	color: #ffffff;
+	font-size:14px;
+	font-weight:bold;
+} 
+
+
+
+::placeholder{
+	color:rgba(255,255,255,0.5); 
+}
+
+
+
+.user{
+	width:100px;
+	height:100px; 
+	overflow:hidden;
+	position:absolute;
+	top:calc(-100px/2);
+	left:calc(50% - 50px);
+	border-radius:50%;
+}
+
+</style>
+</head>
+<body>
+<div class="loginbox">
+
+<h2>Login here</h2>
+<form>
+<p>Email</p>
+<input type="text" name="" required placeholder="Enter Email">
+<p>Password</p>
+<input type="Password" name="" required placeholder="Password">
+<input type="submit"name=""value="Login">
+
+<p style="text-align:center" color:yellow><a href="F:\Akash kore\HTML CSS\Website 1\Registration form\Registration form.html">Register</a></p>
+</div>
+</form>
+</div>
+</body>
+</html>

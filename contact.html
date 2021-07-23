@@ -1,0 +1,456 @@
+<html>
+<head>
+	<title>Contact Us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Contact Us page</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7
+.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2
+xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="contact.css" rel="stylesheet">
+
+
+
+<script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> 
+	</script> 
+	<script> 
+		function geeks(msg, gfg) { 
+			var confirmBox = $("#cont"); 
+			
+		
+			confirmBox.find(".message").text(msg); 
+			
+			
+			confirmBox.find(".yes").unbind().click(function() 
+			{ 
+			confirmBox.hide(); 
+			}); 
+			confirmBox.find(".yes").click(gfg); 
+			confirmBox.show(); 
+			
+			confirmBox.find(".no").unbind().click(function() 
+			{ 
+			confirmBox.hide(); 
+			}); 
+			confirmBox.find(".no").click(gfg); 
+			confirmBox.show(); 
+		} 
+	</script> 
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+*{
+
+padding:0;
+box-sizing:border-box;
+font-family:'poppins',sans-serif;
+}
+
+
+
+		
+		#cont { 
+			display: none; 
+			background-image: linear-gradient(to right, #66a80f, #c0eb75); 
+			background-size:cover; 
+			color: white; 
+			position: absolute; 
+			width: 350px; 
+			border-radius: 5px; 
+			left: -20%; 
+	margin-top: -250px; 
+			margin-left: -160px; 
+			padding: 16px 8px 8px; 
+			box-sizing: border-box; 
+		} 
+		
+	
+		#cont .yes { 
+			background-color: #5c940d; 
+			display: inline-block; 
+			border-radius: 5px; 
+			border: 2px solid gray; 
+			padding: 5px; 
+			margin-right: 10px; 
+			text-align: center; 
+			width: 70px; 
+			
+		} 
+		
+		#cont .no { 
+			background-color: #22b8cf; 
+			display: inline-block; 
+			border-radius: 5px; 
+			border: 2px solid gray; 
+			padding: 5px; 
+			margin-right: 10px; 
+			text-align: center; 
+			width: 95px; 
+		
+		} 
+		
+		#cont .yes:hover { 
+			background-color: #82c91e; 
+
+		} 
+		
+		#cont .no:hover { 
+			background-color: #99e9f2; 
+
+		} 
+		
+	
+		#cont .message { 
+			text-align: left; 
+			padding: 10px 30px; 
+		} 
+ 
+
+
+ul{
+margin:0px;
+padding:0px;
+list-style:none;
+
+}
+ul li{
+float:left;
+width:180px;
+height:40px;
+background-color:Royal Blue;
+opacity:.8;
+line-height:40px;
+text-align:center;
+font-size:20px;
+margin-right:2px;
+
+}
+ul li a{
+text-decoration:none;
+color:white;
+display:block;
+transition:0.6s ease;
+
+}
+ul li a:hover{
+background-color:white;
+color:#000;
+}
+ul li ul li{
+display:none;
+}
+ul li:hover ul li{
+display:block;
+}
+
+
+
+.logo h2{
+float:right;
+width:50px;
+height:auto;
+margin:10px 10 0 0px; 
+color:#fff;
+}
+
+
+.contact
+{
+position:relative;
+min-height:110vh;
+padding:0px 100px;
+display:flex;
+justify-content:center;
+align-items: center;
+flex-direction:column;
+background:url(mainimg/co.jpg);
+background-size:1400px 700px;
+}
+
+.contact .content
+{
+max-width:800px;
+text-align:center;
+text-underline-offset:#fff;
+}
+
+.contact .content h2
+{
+font-size:36px;
+font-weight:500;
+color:#fff;
+}
+
+.contact .content p
+{
+font-weight:300;
+color:#fff;
+text-align:center;
+}
+
+.container
+{
+width:90%;
+display:flex;
+justify-content:left;
+align-itemS:center;
+margin-top:20px;
+}
+
+.container .contactinfo
+{
+width:50%;
+display:flex;
+flex-direction:column;
+}
+
+.container .contactinfo .box
+{
+position:relative;
+padding:10px 0;
+display:flex;
+}
+.container .contactinfo .box .icon
+{
+
+font-size:22px;
+padding:4%;
+height:70px;
+width:70px;
+border-radius:60%;
+margin:2%;
+cursor:pointer;
+background:#fff;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:22px;
+}
+
+.container .contactinfo .box .icon:hover
+{
+border:2px solid #fff;
+cursor:pointer;
+color:rgb(9, 209, 245);
+}
+
+
+.container .contactinfo .box .text
+{
+display:flex;
+margin-left:20px;
+font-size:16px;
+color:#fff;
+flex-direction:column;
+font-weight:300;
+}
+
+.container .contactinfo .box .text h3
+{
+font-weight:500;
+color:#00bcd4;
+}
+
+
+
+
+
+
+body{
+	margin:0;
+	padding:0;
+	font-family: sans-serif; 
+}
+
+.loginbox{
+
+	position:absolute;
+	top:68%;
+	left:70%;
+	transform: translate(10%, -50%);
+	width:396px;
+	height:460px;
+	padding:50px;
+	box-sizing: border-box;
+	background:rgba(0,0,0,0.5);
+}
+
+
+
+
+.loginbox p{
+	padding:0;
+	margin:0;
+	color:#ffffff;
+	
+} 
+
+
+
+.loginbox input, .loginbox textarea {
+	width:90%;
+	margin-bottom: 20px; 
+       color:#e91e63;
+      font-size:12px;
+      transform:translate(-20px);
+}
+
+
+.loginbox input[type="text"], .loginBox input[type="password"]{
+	border: none;
+	border-bottom: 1px solid #ffffff;
+	background: transparent;
+	outline:none;
+	height:40px;
+	color:#ffffff;
+	font-size: 16px;
+	
+	
+}
+
+
+
+.loginbox input[type="button"]{
+	border:none;
+	outline:none;
+	height: 40px;
+        width:130px;
+       margin-top: 20px; 
+
+	color:#ffffff;
+	font-size:16px;
+	background: rgb(255,38,126);
+	cursor:pointer;
+	border-radius:20px;
+}
+
+.loginbox input[type="submit"]:hover
+{
+color:black;
+background-color:pink;
+}
+
+.loginbox a{
+	color: #ffffff;
+	font-size:14px;
+	font-weight:bold;
+} 
+
+
+
+
+
+
+</style>
+
+
+
+</head>
+<section class="contact" style="border:1px solid" >
+<body>
+
+
+
+
+	<div style="height:100%;width:110%;float:left;transform:translate(1%,10%)">
+		<div class="logo">
+		<h2>WD</h2>
+		</div>
+		<ul>
+		   <li><a href="index.html">HOME</a></li>
+		   <li><a href="contact.html">CONTACT US</a></li>
+		   <li><a href="about us.html">ABOUT US</a> </li>
+		   <li><a href="feedback.html">FEEDBACK</a></li>
+		</ul>
+		
+		</div>
+
+
+<br><br>
+<div class="container">
+<div style="height:100%;transform:translate(0%,-7%)">
+
+<div class="content">
+<center><h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCONTACT US</h2>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWe are always ready to help you with your questions. we are willing to
+ cooprate,<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspand we appreciate your ideas.  Email us and keep upto date with out latest Entertainment products</p>
+</center>
+</div>
+
+<BR><BR>
+
+<div class="contactinfo">
+<div class="box">
+<div class="icon"><i class="fa fa-map-marker"aria-hidden="true"></i></div>
+<div class="text">
+<h3><b> &nbspAddress</b></h3>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAshta,Sangli</p>
+</div>
+</div>
+
+<div class="box">
+<div class="icon"><i class="fa fa-phone"></i>
+</div>
+<div class="text">
+<h3><b>&nbsp Phone no.</b></h3>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp+91 8625912131</p>
+</div>
+</div>
+
+<div class="box">
+<div class="icon"><i class="fa fa-envelope"></i>
+</div>
+<div class="text">
+<h3><b>&nbsp<a href = "mailto: divakarlokhande7987@gmail.com" style="font-weight:500;
+	color:#00bcd4;text-decoration:none;font-weight:600;">Send Email</a></b></h3>
+	
+
+</div>
+</div>
+
+
+<div class="loginbox">
+
+<form>
+<p>First Name</p>
+<input type="text" name=""  placeholder="Enter First Name">
+<p>Last Name</p>
+<input type="text" name="" placeholder=" Enter Last Name">
+<p>Email</p>
+<input type="text" name=""  placeholder=" Enter Email">
+<p>Text Message</p>
+<textarea name="message" name="" placeholder="Text your Message...." row="4" col="50"></textarea><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	
+
+<div id="cont"> 
+		<div class="message"> 
+			Thanks for Contacting us...<br>  
+            We respect your words</div> 
+		<button class="yes">Conform</button> 
+        <button class="no">Unsend</button>
+	</div> 
+				 
+	<input type="button" value="Send" onclick="geeks();" /> 
+
+
+</div>
+</form>
+</div>
+
+
+</div>
+</div>
+</div>
+</section>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

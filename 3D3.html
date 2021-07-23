@@ -1,0 +1,1456 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>wallpaper</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7
+  .0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2
+  xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style 1.css">
+  
+
+  <style>
+	 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,700;0,800;1,300;1,400;1,600&display=swap');
+	 
+	 
+	   body {
+  margin: 0;
+  padding:0;
+  font-family:"Raleway",sans-serif;
+  background-color:#fff;
+}
+.main{
+    		padding: 40px 0;
+    	}
+    	.col-md-3{
+    		margin-bottom: 40px;
+    	}
+    	.album-poster{
+    		position: relative;
+    		display: block;
+    		border-radius: 7px;
+    		overflow: hidden;
+    		box-shadow: 0 15px 35px #0a07d3a1;
+    		transition: all ease 0.4s;
+    	}
+    	.album-poster:hover{
+    		box-shadow: none;
+    		transform: scale(0.98) translateY(5px);
+    	}
+.container{
+            margin:30px;
+        }
+        .row{
+            width:100%;
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+        }
+        .image{
+           
+            position:relative;
+            flex:1;
+            max-width:300px;
+            height:167px;
+            margin:20px;
+        }
+        .image img{
+            opacity:0.8;
+            position:relative;
+            vertical-align:top;
+            transition:0.6s;
+            transition-property:opacity;
+            overflow:hidden;
+        }
+        .image:hover img{
+            opacity:1;
+			
+        }
+        .image .details{
+            z-index:1;
+            position:absolute;
+            top:0;
+            right:10;
+            color:#fff;
+            width:20%;
+            height:100%;
+      
+        }
+
+       
+        .image .details h2{
+            text-align:center;
+            font-size:20px;
+            text-transform:uppercase;
+            font-weight:300;
+            margin-top:70px;
+            transition:0.4s;
+            transition-property:transform;
+        }
+
+        .image .details h2 span{
+            font-weight:900;
+        }
+
+        .image:hover .details h2{
+               transform:translateY(-30px);
+
+        }
+
+
+
+.more{
+  position:absolute;
+  background:rgba(225,225,225,0.8);
+  width:470.5%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px;
+  bottom:-34px;
+  transition:0.6s;
+  transition-property:bottom;
+}
+.image:hover .more{
+  bottom:0;
+}
+.more .read-more{
+  color:#000;
+  text-decoration:none;
+  font-size:20px;
+  font-weight:500;
+  text-transform:uppercase;
+}
+
+.more .icon-links i{
+  color:#000;
+  font-size:20px;
+}
+
+.more .icon-links a:not(:last-child) i{
+  margin-right:20px;
+}
+
+
+
+.home{
+    position:absolute;
+    top:9%;
+    left:0%;
+    padding:40px;
+}
+.nav1{
+    list-style-type:none;
+display:inline-block;
+padding:10px 20px;
+border:1px solid ;
+margin:5px;
+transition:1s;
+transform:translate(10%,-50%);
+
+}
+
+.nav1:hover{
+    background-color:#1c2833
+}
+.nav1 a{
+    text-decoration:none;
+    color:rgb(66, 133, 40);
+    width:100%;
+}
+ 
+ .nav1:hover a, li a:hover{
+     color:#fff;
+ }
+                    #dark-change{
+            position: absolute;
+            width: 48px;
+            height: 25px;
+            right: 340px;
+            top: 20px;
+            border: 2px solid;
+            border-radius: 20px;
+        }
+     #dark-change:before{
+            position: absolute;
+            content: '';
+            width:18px;
+            height: 18px;
+            left: 1px;
+            top: 2px;
+            border-radius: 90%;
+            background: #fff;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        #dark-change.active:before{
+            left: 24px;
+            background: #fff;
+        }
+        body.night{
+            background: #000;
+            color: #fff;
+        }
+      
+            
+            .container{
+                width:100%;
+                height:100%;
+                margin:0;
+                padding:0;
+            }
+            .container nav{
+                position:absolute;
+                width:100%;
+                top: 0;
+                height:60px;
+                background-color:#1c2833;
+                color:white;
+            }
+            nav .webname{
+                float:left;
+                margin:15px 0px 15px 30px;
+                font-size:15px;
+            }
+            nav ul{
+                float:right;
+                list-style:none;
+                margin:0;
+                padding:0;
+                width:600px;
+                
+            }
+            nav li{
+                display:inline-block;
+                line-height:56px;
+                margin:0 5px;
+                
+            }
+            nav ul li a{
+                font-size:20px;
+                 position:relative;
+display:inline-block;
+color:#2196f3;
+text-transform:uppercase;
+letter-spacing:4px;
+text-decoration:none;
+overflow:hidden;
+transition:0.2s;
+}
+ul li a:hover{
+color:#fff;
+background:#2196f3;
+box-shadow: 0 0 20px #29618f, 0 0 40px  #29618f,0 0 80px  #29618f;
+transition-delay:1s;
+}
+ 
+            
+a span
+{
+position:absolute;
+display:block;
+}
+
+a span:nth-child(1)
+{
+top:0;
+left:-100%;
+width:100%;
+height:2px;
+background:linear-gradient(90deg,transparent,#2196f3);
+}
+
+a:hover span:nth-child(1)
+{
+left:100%;
+transition:1s;
+}
+a span:nth-child(3)
+{
+bottom:0%;
+right:-100%;
+width:100%;
+height:2px;
+background:linear-gradient(270deg,transparent,#2196f3);
+}
+
+a:hover span:nth-child(3)
+{
+right:100%;
+transition:1s;
+transition-delay:0.5s;
+}
+a span:nth-child(2)
+{
+top:-100%;
+right:0;
+width:2px;
+height:100%;
+background:linear-gradient(180deg,transparent,#2196f3);
+}
+
+a:hover span:nth-child(2)
+{
+top:100%;
+transition:1s;
+transition-delay:0.25s;
+}
+
+a span:nth-child(4)
+{
+bottom:-100%;
+left:0;
+width:2px;
+height:100%;
+background:linear-gradient(360deg,transparent,#2196f3);
+}
+
+a:hover span:nth-child(4)
+{
+bottom:100%;
+transition:1s;
+transition-delay:0.75s;
+}
+
+            #search{
+                position:relative;
+                margin-top:10px;
+                padding:5px 10px 5px 20px;
+                width:190;
+                height:40px;
+                border-bottom:2px solid #3498db;
+                font-size:15px;
+                color:#3498db;
+                border-radius:50px;
+                align-items:center;
+                float:right;
+                z-index:0;
+            }
+            #submit{
+                position:relative;
+                left:-40px;
+                margin-top:10px;
+                width:40px;
+                height:40px;
+                font-size:20px;
+                border-radius:50px;
+                float:right;
+                background-color:#3498db;
+                color:white;
+                cursor:pointer;
+                z-index:1;
+
+            }
+            #btn{
+                display:none;
+            }
+            .check{
+font-size:30px;
+color:white;
+float:right;
+line-height:60px;
+margin-right:20px;
+margin-left:10px;
+cursor: pointer;
+transform:rotate(-90deg);
+display:none;
+            }
+
+
+.slider{
+    width:700px;
+    height:500px;
+    border-radius:10px;
+    overflow:hidden;
+}
+.slides{
+    width:500%;
+    height:500px;
+    display:flex;
+}
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+
+
+.slide img{
+    width:1000px;
+    height:500px;
+}
+  .navigation-manual{
+   position:absolute;
+   width:800px;
+   margin-top:-230px;
+   display:flex;
+   justify-content:center;
+   transform:translate(-40px,-10px)
+   
+}
+.manual-btn{
+    border:2px solid #40D3DC;
+    padding:5px;
+    border-radius:90px;
+    cursor:pointer;
+    margin-left:1%;
+    transition:1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right:20px;
+}
+
+.manual-btn:hover{
+    background:#40D3DC;
+}
+
+
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 190px);
+  justify-content: center;
+  align-content: center;
+  grid-gap: 30px;
+  height: 120vh;
+}
+
+.grid img {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+
+#lightbox {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .8);
+  display: none;
+}
+
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 100%;
+  align-items: center;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  padding: 4px;
+  background-color: black;
+  border: 2px solid white;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+@media(max-width:1100px){
+                nav ul{
+                    width:0%;
+                    position:fixed;
+                    height:200px;
+                    top:60px;
+                    left:100%;
+                    text-align:center;
+                    background-color:#2c3e50;
+                    transition:all 1s;
+
+                }
+                nav ul li{
+                    display:block;
+                }
+                nav ul li a{
+                    font-size:20px;
+                    color:white;
+                }
+                .check{
+                    display:block;
+                }
+                nav ul li a{
+                    font-size:20px;
+                    color:white;
+                }
+                .check{
+                    display:block;                    
+                }
+                #btn:checked~ul{
+                   left:70%;
+                }
+            }
+
+            @media screen and (min-width:1100px) {
+          .respon{
+            display: flex;
+            float:left;
+          }
+          nav .webname{
+             
+                margin:15px 0px 15px 30px;
+                font-size:30px;
+            }
+            #search{
+                position:relative;
+                margin-top:10px;
+                padding:5px 10px 5px 20px;
+                width:250;
+                height:40px;
+                border-bottom:2px solid #3498db;
+                font-size:15px;
+                color:#3498db;
+                border-radius:50px;
+                align-items:center;
+                float:right;
+                z-index:0;
+            }
+ 
+        
+        }
+
+        figure .image1{
+    position:relative;
+    overflow:hidden;
+    margin:10px;
+
+}
+
+figure.image1 img{
+    max-width:199px;
+    position:relative;
+    opacity:0.4;
+    max-height:500px;
+}
+    
+
+figure.image1 *{
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -webkit-transition:all 0.4s ease-in-out;
+    transition:all 0.4s ease-in-out;
+}
+figure.image1 h2{
+    position:absolute;
+    left:610px;
+    right:580px;
+    display:inline-block;
+   top:98%;
+    text-transform:uppercase;
+    padding:6px 3px;
+    
+}
+
+figure.image1::before{
+    height:112px;
+    width:200px;
+    top:58%;
+    left:535;
+    position:absolute;
+    content:'';
+    background:rgb(163, 150, 29);
+    -webkit-tansition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+    -webkit-transform:rotate(110deg)translateY(-5%);
+    transform:rotate(0deg) translatey(-60%);
+}
+
+figure.image1:hover img{
+    opacity:1;
+    -webkit-transform:scale(1);
+    transform:scale(1);
+}
+figureimagehoverh2{
+-webkit-transform:skew(-10deg) rotate(-10deg) translate(-150%,50%);
+transform:skew(-10deg) rotate(-10deg) translate(-150%,50%);
+
+}
+
+.wrapper1 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  -webkit-transform: translate(-40%,-50%);
+}
+
+h1 a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight:800;
+  position: relative;
+  font-family: 'Dosis', sans-serif;
+
+
+}
+
+
+a.effect-underline:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+a.effect-underline:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+
+
+figure .image2{
+    position:relative;
+    overflow:hidden;
+    margin:10px;
+
+}
+
+figure.image2 img{
+    max-width:199px;
+    position:relative;
+    opacity:0.4;
+    max-height:500px;
+}
+    
+
+figure.image2 *{
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -webkit-transition:all 0.4s ease-in-out;
+    transition:all 0.4s ease-in-out;
+}
+figure.image2 h2{
+    position:absolute;
+    left:610px;
+    right:580px;
+    display:inline-block;
+   top:98%;
+    text-transform:uppercase;
+    padding:6px 3px;
+    
+}
+
+figure.image2::before{
+    height:110px;
+    width:200px;
+    top:58%;
+    left:535;
+    position:absolute;
+    content:'';
+    background:rgb(45, 163, 29);
+    -webkit-tansition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+    -webkit-transform:rotate(110deg)translateY(-5%);
+    transform:rotate(0deg) translatey(-60%);
+}
+
+figure.image2:hover img{
+    opacity:1;
+    -webkit-transform:scale(1);
+    transform:scale(1);
+}
+figureimagehoverh2{
+-webkit-transform:skew(-10deg) rotate(-10deg) translate(-150%,50%);
+transform:skew(-10deg) rotate(-10deg) translate(-150%,50%);
+
+}
+
+.wrapper2 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  -webkit-transform: translate(-40%,-50%);
+}
+
+h1 a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight:800;
+  position: relative;
+  font-family: 'Dosis', sans-serif;
+
+
+}
+
+
+a.effect-underline:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+a.effect-underline:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+
+figure .image3{
+    position:relative;
+    overflow:hidden;
+    margin:10px;
+
+}
+
+figure.image3 img{
+    max-width:199px;
+    position:relative;
+    opacity:0.4;
+    max-height:500px;
+}
+    
+
+figure.image3 *{
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -webkit-transition:all 0.4s ease-in-out;
+    transition:all 0.4s ease-in-out;
+}
+figure.image3 h2{
+    position:absolute;
+    left:610px;
+    right:580px;
+    display:inline-block;
+   top:98%;
+    text-transform:uppercase;
+    padding:6px 3px;
+    
+}
+
+figure.image3::before{
+    height:112px;
+    width:200px;
+    top:58%;
+    left:535;
+    position:absolute;
+    content:'';
+    background:rgb(176, 83, 219);
+    -webkit-tansition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+    -webkit-transform:rotate(110deg)translateY(-5%);
+    transform:rotate(0deg) translatey(-60%);
+}
+
+figure.image3:hover img{
+    opacity:1;
+    -webkit-transform:scale(1);
+    transform:scale(1);
+}
+figureimagehoverh2{
+-webkit-transform:skew(-10deg) rotate(-10deg) translate(-150%,50%);
+transform:skew(-10deg) rotate(-10deg) translate(-150%,50%);
+
+}
+
+.wrapper3 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  -webkit-transform: translate(-40%,-50%);
+}
+
+h1 a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight:800;
+  position: relative;
+  font-family: 'Dosis', sans-serif;
+
+
+}
+
+
+a.effect-underline:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+a.effect-underline:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+
+  </style>
+  
+</head>
+
+
+
+
+<body>
+
+
+        
+<div class="container">
+    
+  <nav>
+      <input type="checkbox" name="" id="btn">
+      <label for="btn" class="check">!!!</label>
+    
+      <a href="" id="hp" onclick="searchit()">  <input type="submit" value="Q" id="submit"></input></a>
+      <input type="search" name="" id="search" placeholder="search engine">
+<script>
+  function searchit()
+{
+  document.getElementById("hp").href=
+  (("https://www.google.com/search?q=")+
+  (document.getElementById("search").value));
+}
+  </script>
+    
+
+    <div class="webname">WD</div>
+    <ul>
+        <li><a href="index.html" style="	text-decoration: none;left:-150%"><span></span>
+            <span></span>
+            <span></span>
+            <span></span>&nbspHOME&nbsp</a></li>
+        <li><a href="about us.html" style="	text-decoration: none;left:-100%"><span></span>
+            <span></span>
+            <span></span>
+            <span></span>&nbspABOUT &nbsp</a></li>
+        <li><a href="contact.html" style="	text-decoration: none;left:-95%"><span></span>
+            <span></span>
+            <span></span>
+            <span></span>&nbspCONTACT&nbsp</a></li>
+            <li><a href="feedback.html" style="	text-decoration: none;left:-80%"><span></span>
+              <span></span>
+              <span></span>
+              <span></span>&nbspFEEDBACK&nbsp</a></li>
+    </ul>
+      <header>
+          <div  id="dark-change"></div>
+        </header>
+       
+          <script>
+              var content = document.getElementsByTagName('body')[0];
+              var darkMode = document.getElementById('dark-change');
+              darkMode.addEventListener('click', function(){
+                  darkMode.classList.toggle('active');
+                  content.classList.toggle('night');
+              })
+          </script>
+  </nav>
+<br>
+      
+          <div class="slider" style="border:4px solid;transform:translate(350px,200px);height:300px;">
+
+        <div class="slides">
+          
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <div class="slide first">
+            <img src="wall/wall34.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="wall/wall35.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="wall/wall36.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="wall/wall37.jpg" alt="">
+          </div>
+    
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          
+        </div>
+    
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+    
+      </div>
+    
+    
+  
+      <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }
+      }, 5000);
+      </script>
+      <div style="width:20%;transform:translate(150px,-280px)">
+        <figure class="image1">
+          <img src="3Dw/3d16.jpg " alt="3D image">
+          <figcaption>
+           
+           <div class="wrapper1" >
+               <h1 align="center"><a href="3D2.html" class="effect-underline">Water 3D <br><b>WALLPAPER</b> </a></h1>
+             </div>
+             </div>      </figcaption>
+       </figure>
+  </div>
+  <div style="width:20%;transform:translate(550px,-413px)">
+      <figure class="image2">
+        <img src="3Dw/3d1.jpg " alt="3D image">
+        <figcaption>
+         
+         <div class="wrapper2" >
+             <h1 align="center"><a href="3D1.html" class="effect-underline">Abstract 3D <br><b>WALLPAPER</b> </a></h1>
+           </div>
+           </div>      </figcaption>
+     </figure>
+  </div>
+  <div style="width:20%;transform:translate(940px,-544px)">
+      <figure class="image3">
+        <img src="3Dw/3d32.jpg " alt="3D image">
+        <figcaption>
+         
+         <div class="wrapper3" >
+             <h1 align="center"><a href="3D3.html" class="effect-underline">Creative 3D <br><b>WALLPAPER</b> </a></h1>
+           </div>
+           </div>      </figcaption>
+     </figure>
+  </div>
+  <div style="transform:translate(0%,-4%)">
+
+    <div class="text">
+    
+        <h1>&nbsp&nbsp&nbsp&nbsp Creative 3 D Wallpaper</h1>
+        <hr>
+    
+                        <div class="main">
+                            <div class="container">
+                        <div class="row"> 
+                            <div class="image" style="left:3%;transform:translate(-150%,-20%);">
+                                    <div class="col-md-2">
+                                <a href="javascript:void();" class="album-poster" data-switch="0">
+                                    <img src="3Dw/3d31.jpg">
+                                </a>
+                                <div class="details">
+                                <h2>Creative 3D<span>Wallpaper</span></h2>
+                                
+                                    <div class="more">
+                                        <div class="icon-links">
+                                            
+                                            <a href="login.html"><i class="fa fa-star" aria-hidden="true"></i></a>
+                
+                                                <a href="3Dw/3d31big.PNG"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                                    <a href="https://web.whatsapp.com/"><i class="fa fa-paperclip" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                        
+    
+    
+                        <div class="main">
+                            <div class="container">
+                        <div class="row">
+                        <div class="image"  style="left:5%;transform:translate(-30%,-167%);">
+                            <div class="col-md-2">
+                                <a href="javascript:void();" class="album-poster" data-switch="0">
+                                    <img src="3Dw/3d32.jpg">
+                                </a>
+                                <div class="details">
+                                    <h2>Creative 3D<span>Wallpaper</span></h2>
+                                
+                                    <div class="more">
+                                        <div class="icon-links">
+                                            
+                                            <a href="login.html"><i class="fa fa-star" aria-hidden="true"></i></a>
+                
+                                                <a href="3Dw/3d32big.PNG"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                                    <a href="https://web.whatsapp.com/"><i class="fa fa-paperclip" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            <div class="main">
+                                <div class="container">                        
+                            <div class="row">
+                            <div class="image"  style="left:24%;transform:translate(10%,-325%)">
+                                <div class="col-md-2">
+                                    <a href="javascript:void();" class="album-poster" data-switch="0">
+                                        <img src="3Dw/3d33.jpg">
+                                    </a>
+                                    <div class="details">
+                                        <h2>Creative 3D<span>Wallpaper</span></h2>
+                                    
+                                        <div class="more">
+                                            <div class="icon-links">
+                                                
+                                                <a href="login.html"><i class="fa fa-star" aria-hidden="true"></i></a>
+                    
+                                                    <a href="3Dw/3d33big.PNG"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                                        <a href="https://web.whatsapp.com/"><i class="fa fa-paperclip" aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                        
+    
+    
+                            <div class="main">
+                                <div class="container">
+                            <div class="row">
+    
+                                <div class="image"  style="left:27%;transform:translate(10%,150%)">
+                                    <div class="col-md-2">
+                                        <a href="javascript:void();" class="album-poster" data-switch="0">
+                                            <img src="3Dw/3d34.jpg">
+                                        </a>
+                                        <div class="details">
+                                            <h2>Creative 3D<span>Wallpaper</span></h2>
+                                        
+                                            <div class="more">
+                                                <div class="icon-links">
+                                                    
+                                                    <a href="login.html"><i class="fa fa-star" aria-hidden="true"></i></a>
+                        
+                                                        <a href="3Dw/3d34big.PNG"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                                            <a href="https://web.whatsapp.com/"><i class="fa fa-paperclip" aria-hidden="true"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                            
+                    <div class="main">
+                        <div class="container">
+                    <div class="row">
+    
+                        <div class="image"  style="left:-29%;transform:translate(-30%,-470%);">
+                            <div class="col-md-2">
+                                <a href="javascript:void();" class="album-poster" data-switch="0">
+                                    <img src="3Dw/3d35.jpg">
+                                </a>
+                                <div class="details">
+                                    <h2>Creative 3D<span>Wallpaper</span></h2>
+                                
+                                    <div class="more">
+                                        <div class="icon-links">
+                                            
+                                            <a href="login.html"><i class="fa fa-star" aria-hidden="true"></i></a>
+                
+                                                <a href="3Dw/3d35big.PNG"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                                    <a href="https://web.whatsapp.com/"><i class="fa fa-paperclip" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+                    
+          
+    <div class="main">
+        <div class="container">
+    <div class="row">
+    
+        <div class="image"  style="left:-9%;transform:translate(10%,-622%)">
+            <div class="col-md-2">
+                <a href="javascript:void();" class="album-poster" data-switch="0">
+                    <img src="3Dw/3d36.jpg">
+                </a>
+                <div class="details">
+                    <h2>Creative 3D<span>Wallpaper</span></h2>
+                
+                    <div class="more">
+                        <div class="icon-links">
+                            
+                            <a href="login.html"><i class="fa fa-star" aria-hidden="true"></i></a>
+    
+                                <a href="3Dw/3d36big.PNG"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                    <a href="https://web.whatsapp.com/"><i class="fa fa-paperclip" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="main">
+        <div class="container">
+    <div class="row">
+    
+        <div class="image"  style="left:20%;transform:translate(10%,-770%)">
+            <div class="col-md-2">
+                <a href="javascript:void();" class="album-poster" data-switch="0">
+                    <img src="3Dw/3d37.jpg">
+                </a>
+                <div class="details">
+                    <h2>Creative 3D<span>Wallpaper</span></h2>
+                
+                    <div class="more">
+                        <div class="icon-links">
+                            
+                            <a href="login.html"><i class="fa fa-star" aria-hidden="true"></i></a>
+    
+                                <a href="3Dw/3d37big.PNG"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                    <a href="https://web.whatsapp.com/"><i class="fa fa-paperclip" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="main">
+        <div class="container">
+    <div class="row">
+    
+        <div class="image"  style="left:-6%;transform:translate(-115%,-758%)">
+            <div class="col-md-2">
+                <a href="javascript:void();" class="album-poster" data-switch="0">
+                    <img src="3Dw/3d38.jpg">
+                </a>
+                <div class="details">
+                    <h2>Creative 3D<span>Wallpaper</span></h2>
+                
+                    <div class="more">
+                        <div class="icon-links">
+                            
+                            <a href="login.html"><i class="fa fa-star" aria-hidden="true"></i></a>
+    
+                                <a href="3Dw/3d38big.PNG"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                    <a href="https://web.whatsapp.com/"><i class="fa fa-paperclip" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="main">
+        <div class="container">
+    <div class="row">
+    
+        <div class="image"  style="left:-60;transform:translate(-10%,-910%)">
+            <div class="col-md-2">
+                <a href="javascript:void();" class="album-poster" data-switch="0">
+                    <img src="3Dw/3d39.jpg">
+                </a>
+                <div class="details">
+                    <h2>Creative 3D<span>Wallpaper</span></h2>
+                
+                    <div class="more">
+                        <div class="icon-links">
+                            
+                            <a href="login.html"><i class="fa fa-star" aria-hidden="true"></i></a>
+    
+                                <a href="3Dw/3d39big.PNG"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                    <a href="https://web.whatsapp.com/"><i class="fa fa-paperclip" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="main">
+        <div class="container">
+    <div class="row">
+    
+        <div class="image"  style="left:24%;transform:translate(10%,-1059%)">
+            <div class="col-md-2">
+                <a href="javascript:void();" class="album-poster" data-switch="0">
+                    <img src="3Dw/3d40.jpg">
+                </a>
+                <div class="details">
+                    <h2>Creative 3D<span>Wallpaper</span></h2>
+                
+                    <div class="more">
+                        <div class="icon-links">
+                            
+                            <a href="login.html"><i class="fa fa-star" aria-hidden="true"></i></a>
+    
+                                <a href="3Dw/3d40big.PNG"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                    <a href="https://web.whatsapp.com/"><i class="fa fa-paperclip" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="main">
+        <div class="container">
+    <div class="row">
+    
+        <div class="image"  style="left:-38%;transform:translate(10%,-1045%)">
+            <div class="col-md-2">
+                          <a href="javascript:void();" class="album-poster" data-switch="0">
+                    <img src="3Dw/3d41.png">
+                </a>
+                <div class="details">
+                    <h2>Creative 3D<span>Wallpaper</span></h2>
+                
+                    <div class="more">
+                        <div class="icon-links">
+                            
+                            <a href="login.html"><i class="fa fa-star" aria-hidden="true"></i></a>
+    
+                                <a href="3Dw/3d41big.jpg"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                    <a href="https://web.whatsapp.com/"><i class="fa fa-paperclip" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="main">
+        <div class="container">
+    <div class="row">
+    
+        <div class="image"  style="left:-8%;transform:translate(10%,-1190%)">
+            <div class="col-md-2">
+                <a href="javascript:void();" class="album-poster" data-switch="0">
+                    <img src="3Dw/3d42.jpg">
+                </a>
+                <div class="details">
+                    <h2>Creative 3D<span>Wallpaper</span></h2>
+                
+                    <div class="more">
+                        <div class="icon-links">
+                            
+                            <a href="login.html"><i class="fa fa-star" aria-hidden="true"></i></a>
+    
+                                <a href="3Dw/3d42big.PNG"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                    <a href="https://web.whatsapp.com/"><i class="fa fa-paperclip" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="main">
+        <div class="container">
+    <div class="row">
+    
+        <div class="image"  style="left:23%;transform:translate(10%,-1340%)">
+            <div class="col-md-2">
+                <a href="javascript:void();" class="album-poster" data-switch="0">
+                    <img src="3Dw/3d43.jpg">
+                </a>
+                <div class="details">
+                    <h2>Creative 3D<span>Wallpaper</span></h2>
+                
+                    <div class="more">
+                        <div class="icon-links">
+                            
+                            <a href="login.html"><i class="fa fa-star" aria-hidden="true"></i></a>
+    
+                                <a href="3Dw/3d43big.PNG"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                    <a href="https://web.whatsapp.com/"><i class="fa fa-paperclip" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="main">
+        <div class="container">
+    <div class="row">
+    
+        <div class="image"  style="left:-33%;transform:translate(10%,-1330%)">
+            <div class="col-md-2">
+                <a href="javascript:void();" class="album-poster" data-switch="0">
+                    <img src="3Dw/3d44.jpg">
+                </a>
+                <div class="details">
+                    <h2>Creative 3D<span>Wallpaper</span></h2>
+                
+                    <div class="more">
+                        <div class="icon-links">
+                            
+                            <a href="login.html"><i class="fa fa-star" aria-hidden="true"></i></a>
+    
+                                <a href="3Dw/3d44big.PNG"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                    <a href="https://web.whatsapp.com/"><i class="fa fa-paperclip" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    
+    <div class="main">
+        <div class="container">
+    <div class="row">
+    
+        <div class="image"  style="left:-3%;transform:translate(10%,-1471%)">
+            <div class="col-md-2">
+                <a href="javascript:void();" class="album-poster" data-switch="0">
+                    <img src="3Dw/3d45.jpg">
+                </a>
+                <div class="details">
+                    <h2>Creative 3D<span>Wallpaper</span></h2>
+                
+                    <div class="more">
+                        <div class="icon-links">
+                            
+                            <a href="login.html"><i class="fa fa-star" aria-hidden="true"></i></a>
+    
+                                <a href="3Dw/3d45big.PNG"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                    <a href="https://web.whatsapp.com/"><i class="fa fa-paperclip" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+  <script>
+    const lightbox = document.createElement('div')
+lightbox.id = 'lightbox'
+document.body.appendChild(lightbox)
+
+const images = document.querySelectorAll('img')
+images.forEach(image => {
+  image.addEventListener('click', e => {
+    lightbox.classList.add('active')
+    const img = document.createElement('img')
+    img.src = image.src
+    while (lightbox.firstChild) {
+      lightbox.removeChild(lightbox.firstChild)
+    }
+    lightbox.appendChild(img)
+  })
+})
+
+lightbox.addEventListener('click', e => {
+  if (e.target !== e.currentTarget) return
+  lightbox.classList.remove('active')
+})
+
+  </script>
+
+<div class="next" style="width:8%;transform:translate(550%,-11391%)">
+    <a href="3D1.html">
+      <button>1</button>
+    </a>
+    
+    <a href="3D2.html">
+      <button>2</button>
+    </a>
+    <a href="3D3.html">
+      <button>3</button>
+    </a></div>
+    
+
+</div>
+
+</body>
+</html>
